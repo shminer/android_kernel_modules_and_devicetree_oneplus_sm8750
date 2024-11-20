@@ -12,7 +12,7 @@ import sys
 
 kernel_info = []
 lts_config_url=(
-"https://gpw22.myoas.com/artifactory/aosp-gki-image-local/"
+"xxx/aosp-gki-image-local/"
 "android_common_kernel/ack_lts_spl_compliance_schedule.csv")
 
 tools_dir = os.path.dirname(os.path.realpath(__file__))

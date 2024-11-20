@@ -48,7 +48,7 @@ function print_module_help ()
 {
     echo "==============================================================================="
     echo "you can check this for usage introduction:"
-    echo "https://odocs.myoas.com/docs/N2A1ME0dMmFlVBAD"
+    echo ""
     echo ""
     echo "this is an example:"
     echo "./kernel_platform/oplus/build/oplus_build_module.sh sun perf <ko path>"

@@ -6,12 +6,12 @@ init_build_environment
 function get_prebuild_image() {
     mkdir -p ${ORIGIN_IMAGE}/qcom/
     mkdir -p ${ORIGIN_IMAGE}/mtk/
-    IMAGE_SERVER="https://gpw21.myoas.com/artifactory/phone-snapshot-local/PSW/SM8750_15/Dodge/23821/Daily/PublicMarket/Master/domestic/user/15.0.0.2_2024051713200082_root/"
+    IMAGE_SERVER="xxx"
     wget ${IMAGE_SERVER}/compile.ini  -O ${ORIGIN_IMAGE}/compile.ini
     OFP_DRI=`cat ${ORIGIN_IMAGE}/compile.ini | grep "ofp_folder =" | awk '{print $3 }'`
     wget ${IMAGE_SERVER}/${OFP_DRI}/IMAGES/vendor_boot.img -O ${ORIGIN_IMAGE}/qcom/vendor_boot.img
     wget ${IMAGE_SERVER}/${OFP_DRI}/IMAGES/vendor_dlkm.img -O ${ORIGIN_IMAGE}/qcom/vendor_dlkm.img
-    IMAGE_SERVER="http://gpw13.myoas.com/artifactory/phone-snapshot-local/PSW/MT6991_15/Yala/23101/Daily/PublicMarket/Master/domestic/user/15.0.0.2_2024051702360099_root/"
+    IMAGE_SERVER="xxx"
     wget ${IMAGE_SERVER}/compile.ini  -O ${ORIGIN_IMAGE}/compile.ini
     OFP_DRI=`cat ${ORIGIN_IMAGE}/compile.ini | grep "ofp_folder =" | awk '{print $3 }'`
     wget ${IMAGE_SERVER}/${OFP_DRI}/IMAGES/vendor_boot.img -O ${ORIGIN_IMAGE}/mtk/vendor_boot.img

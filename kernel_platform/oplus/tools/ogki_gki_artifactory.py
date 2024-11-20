@@ -25,8 +25,8 @@ file_paths = [
     "gki-info.txt",
     "vmlinux.symvers"
 ]
-remote_base_address = "https://gpw22.myoas.com/artifactory/aosp-gki-image-local/"
-remote_api_address  = "https://gpw22.myoas.com/artifactory/api/storage/aosp-gki-image-local/"
+remote_base_address = "xxx/aosp-gki-image-local/"
+remote_api_address  = "xxx/aosp-gki-image-local/"
 
 # Function to check validity of date
 def is_valid_date(date):
@@ -695,7 +695,7 @@ def dump_file_details(args):
 
 def main():
     print('\nget input argc/argv')
-    print('\nyou can read this link for more help\n\nhttps://odocs.myoas.com/docs/KrkEVJQPmKCpeDAJ   \nOKI/OGKI/GKI image\n')
+    print('\nyou can read this link for more help\n\n')
 
     args = parse_cmd_args()
 
